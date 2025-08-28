@@ -12,6 +12,7 @@ This project is a modular machine learning pipeline to predict heart disease usi
 - Easy extension for future ML tasks (e.g., CV/NLP)
 
 ## Project Structure
+
 project/
 ├── data/ # DVC-tracked datasets and models
 ├── src/ # Modular source code
