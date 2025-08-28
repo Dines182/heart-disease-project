@@ -18,14 +18,22 @@ project/
 ├── data/ # DVC-tracked datasets and models
 
 ├── src/ # Modular source code
+
 │ └── heart_disease_project/
+
 │ ├── nodes/ # Kedro nodes
+
 │ ├── pipelines/
+
 │ └── hooks.py
+
 ├── conf/ # Kedro configurations
+
 ├── tests/ # Unit tests with pytest
 ├── README.md
+
 ├── requirements.txt
+
 └── .gitignore
 
 
