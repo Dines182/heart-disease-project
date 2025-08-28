@@ -14,7 +14,9 @@ This project is a modular machine learning pipeline to predict heart disease usi
 ## Project Structure
 
 project/
+
 ├── data/ # DVC-tracked datasets and models
+
 ├── src/ # Modular source code
 │ └── heart_disease_project/
 │ ├── nodes/ # Kedro nodes
