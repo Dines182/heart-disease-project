@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# DVC tracked data
+data/
+models/
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
