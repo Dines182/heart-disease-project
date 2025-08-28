@@ -1,27 +1,51 @@
-# Python cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-
-# Jupyter notebooks checkpoints
-.ipynb_checkpoints/
-
-# MacOS
-.DS_Store
-
-# Virtual environments
-.venv/
+*.pyc
+*.pyt
+*.env
+*.venv
 env/
 venv/
+*.egg-info/
+*.egg
 
-# DVC tracked data
-data/
-models/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
-# IDE files
-.idea/
-.vscode/
+# DVC tracked data (ignore large files, track .dvc)
+data/*
+!data/**/*.dvc
+
+# Models
+src/heart_disease_project/data/model/*
+!src/heart_disease_project/data/model/*.dvc
+
+# Kedro pipeline / cache
+.kedro/
+.ipynb_checkpoints/
+.cache/
+outputs/
+
+# Optional: ignore other intermediate files
+*.tmp
+*.bak
+
+# Ignore Python virtual environments inside project
+.env/
+.venv/
