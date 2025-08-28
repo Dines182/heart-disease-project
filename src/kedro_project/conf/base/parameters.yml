@@ -1,0 +1,23 @@
+# Feature groups used by the preprocessor
+numeric_features: ["age", "trestbps", "chol", "thalach", "oldpeak"]
+binary_features: ["sex", "fbs", "exang"]
+categorical_features: ["cp", "restecg", "slope", "ca", "thal"]
+
+# Train/test split and randomness for reproducibility
+split:
+  test_size: 0.2
+  random_state: 42
+
+# Random Forest choices (quick + good default)
+rf:
+  gridsearch: false          # set true to enable GridSearchCV
+  base_params:               # used when gridsearch = false
+    n_estimators: 200
+    max_depth: 7
+    min_samples_split: 2
+    random_state: 42
+  param_grid:                # used when gridsearch = true
+    clf__n_estimators: [100, 200]
+    clf__max_depth: [3, 5, 7]
+    clf__min_samples_split: [2, 5, 10]
+    clf__random_state: [42]
